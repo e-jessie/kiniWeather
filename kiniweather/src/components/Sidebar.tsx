@@ -1,8 +1,13 @@
-import { Sun } from 'lucide-react';
-import { Moon } from 'lucide-react'
-import { CloudSunRain } from 'lucide-react'
+import { useState } from 'react';
+import { Sun, Moon, CloudSunRain } from 'lucide-react';
 
 export default function Sidebar(){
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    const toggleTheme = () => {
+        setIsDarkMode(!isDarkMode);
+    };
+    
     return(
         <>
             <div className="sidebar text-white">

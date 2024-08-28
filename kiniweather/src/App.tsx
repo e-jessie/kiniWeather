@@ -17,11 +17,12 @@ function App() {
 
   return (
     <>
+
       <BurgerIcon/>
       <Sidebar/>
       <div className='mainside text-white pt-6'>
         <Searchbar onSearch={handlesearch}/>
-        <h1 className='Heading '>Your City</h1>
+        <h1 className='Heading'>Your City</h1>
         <p className='text-[#AEB5CD]'>Chance of Rain: 0*C</p>
         <h2 className='tempheading pt-6'>0*C</h2>
         <Tomorrow/>
@@ -29,6 +30,7 @@ function App() {
         <Rightsidebar2/>
       </div>
       <Rightsidebar/>
+
     </>
   )
 }
